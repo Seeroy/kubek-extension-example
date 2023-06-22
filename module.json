@@ -1,0 +1,31 @@
+{
+  "enabled": true,
+  "name": "example-module",
+  "author": "Seeroy",
+  "sourceCode": "https://github.com/Seeroy/kubek-extension-example",
+  "version": "1.0.0",
+  "displayName": "Example Kubek Module",
+  "description": "This is example Kubek module",
+  "routers": {
+    "/test": "test.js",
+    "/hacked": "hacked_kubek.js"
+  },
+  "pages": {
+    "enabled": true,
+    "showInMenu": {
+      "testpage": {
+        "icon": "ri-building-fill",
+        "__comment_icon": "Use remixicon.com",
+        "name": "{{testpage-name}}"
+      }
+    }
+  },
+  "translations": {
+    "en": {
+      "{{testpage-name}}": "This is test page with translations enabled"
+    },
+    "ru": {
+      "{{testpage-name}}": "Это тестовая страница с включенными переводами"
+    }
+  }
+}
